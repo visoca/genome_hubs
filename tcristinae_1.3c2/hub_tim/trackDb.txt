@@ -1,0 +1,144 @@
+track gcPercent
+longLabel GC Percent in 5-base Window
+shortLabel GC Percent
+type bigWig 0 100
+group map
+visibility dense
+windowingFunction Mean
+bigDataUrl hub_tim.gc5Base.bw
+priority 2
+autoScale Off
+maxHeightPixels 128:36:16
+graphTypeDefault Bar
+gridDefault OFF
+ncolor 0,0,0
+altColor 128,128,128
+viewLimits 30:70
+html gcPercent.html
+
+track cytoBandIdeo
+longLabel Chromosome ideogram
+shortLabel cytoBandIdeo
+bigDataUrl cytoBandIdeo.bb
+type bigBed
+
+track RMsoft
+longLabel Softmaked Repeats
+shortLabel Repeats
+group reps
+type bigBed 3 .
+bigDataUrl hub_tim_softmasking.bb
+visibility dense
+color 255,0,0
+html RMsoft.html
+
+group reps
+type bigBed 3 .
+bigDataUrl hub_tim_softmasking.bb
+color 255,0,0
+
+track Genemark
+longLabel GeneMark predictions
+shortLabel Genemark
+group genePreds
+type bigBed 12 .
+bigDataUrl Genemark.bb
+color 0,255,0
+visibility dense
+html Genemark.html
+
+group genePreds
+type bigBed 12 .
+bigDataUrl Genemark.bb
+color 0,255,0
+
+track AUG_ab_initio_no_utr
+longLabel AUGUSTUS ab initio predictions without UTRs
+shortLabel AUG_ab_initio_no_utr
+group genePreds
+type bigBed 12 .
+bigDataUrl AUG_ab_initio_no_utr.bb
+color 0,0,255
+visibility dense
+html AUG_ab_initio_no_utr.html
+
+group genePreds
+type bigBed 12 .
+bigDataUrl AUG_ab_initio_no_utr.bb
+color 0,0,255
+
+track AUG_hints_no_utr
+longLabel AUGUSTUS predictions with hints without UTRs
+shortLabel AUG_hints_no_utr
+group genePreds
+type bigBed 12 .
+bigDataUrl AUG_hints_no_utr.bb
+color 176,196,222
+visibility dense
+html AUG_hints_no_utr.html
+
+group genePreds
+type bigBed 12 .
+bigDataUrl AUG_hints_no_utr.bb
+color 176,196,222
+
+track Traingenes
+longLabel Training genes
+shortLabel Traingenes
+group genePreds
+type bigBed 12 .
+bigDataUrl Traingenes.bb
+color 0,255,255
+visibility dense
+html Traingenes.html
+
+group genePreds
+type bigBed 12 .
+bigDataUrl Traingenes.bb
+color 0,255,255
+
+track b2h_intron_hints_1
+longLabel Hints of type intron from source b2h
+shortLabel b2h_intron_hints_1
+group hints
+type bigBed 12 .
+bigDataUrl b2h_intron_hints_1.bb
+color 255,0,255
+visibility dense
+html b2h_intron_hints_1.html
+
+group hints
+type bigBed 12 .
+bigDataUrl b2h_intron_hints_1.bb
+color 255,0,255
+
+track ProSplign_intron_hints_1
+longLabel Hints of type intron from source ProSplign
+shortLabel ProSplign_intron_hints_1
+group hints
+type bigBed 12 .
+bigDataUrl ProSplign_intron_hints_1.bb
+color 192,192,192
+visibility dense
+html ProSplign_intron_hints_1.html
+
+group hints
+type bigBed 12 .
+bigDataUrl ProSplign_intron_hints_1.bb
+color 192,192,192
+
+track both_intron_hints_1
+longLabel Hints of type intron from source both
+shortLabel both_intron_hints_1
+group hints
+type bigBed 12 .
+bigDataUrl both_intron_hints_1.bb
+color 128,128,128
+visibility dense
+html both_intron_hints_1.html
+
+group hints
+type bigBed 12 .
+bigDataUrl both_intron_hints_1.bb
+color 128,128,128
+

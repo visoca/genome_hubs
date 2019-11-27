@@ -1,0 +1,6 @@
+hub hub_tim
+shortLabel hub_tim
+longLabel timema_cristinae_1.3c2
+genomesFile genomes.txt
+email v.soria-carrasco@sheffield.ac.uk
+descriptionUrl aboutHub.html
